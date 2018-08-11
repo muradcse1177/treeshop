@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('/adminpanel/home');
+        return view('/adminpanel/dashboard');
     }
 }

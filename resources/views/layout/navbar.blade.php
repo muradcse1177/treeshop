@@ -48,7 +48,8 @@
                                 <li><a href="wishlist.html">Wishlist</a></li>
                                 <li><a href="cart.html">Shopping cart</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="login-register.html">Log In</a></li>
+                                <li><a href="/login">Log In</a></li>
+                                <li><a href="/register">Register</a></li>
                             </ul>
                         </div>
                         <!--Header Top Right End-->
