@@ -9,6 +9,7 @@ class PageController extends Controller
 {
     public function categories()
     {
-        return View('adminpanel.categories');
+        $data = \App::call('App\Http\Controllers\adminpanel\category\CategoryController@allcategorylist');
+        return View('adminpanel.categories',['data' => $data]);
     }
 }

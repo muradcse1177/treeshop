@@ -30,3 +30,9 @@
 <!-- START THEME LABEL SCRIPT -->
 <script src="/adminpanel/assets/dist/js/page/dashboard.js"></script>
 <script src="/adminpanel/assets/dist/js/theme.js"></script>
+<script src="/adminpanel/assets/plugins/datatables/dataTables.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

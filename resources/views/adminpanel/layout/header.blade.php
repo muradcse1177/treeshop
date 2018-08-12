@@ -21,6 +21,7 @@
 <link href="/adminpanel/assets/plugins/emojionearea/emojionearea.min.css" rel=stylesheet type="text/css"/>
 <link href="/adminpanel/assets/plugins/monthly/monthly.min.css" rel=stylesheet type="text/css"/>
 <link href="/adminpanel/assets/plugins/amcharts/export.css" rel=stylesheet type="text/css"/>
+<link href="/adminpanel/assets/plugins/datatables/dataTables.min.css" rel="stylesheet" type="text/css">
 <!-- START THEME LAYOUT STYLE -->
 <link href="/adminpanel/assets/dist/css/style.css" rel="stylesheet" type="text/css"/>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,4 +29,5 @@
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
 <![endif]-->

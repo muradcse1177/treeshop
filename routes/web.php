@@ -9,4 +9,6 @@ Route::get('/home', 'HomeController@index')->name('dashboard');
 
 //Catalog.................................................................................
 Route::get('/categories', 'adminpanel\PageController@categories');
-Route::get('/category/add', 'adminpanel\Category\CategoryController@add');
+Route::post('/category/add', 'adminpanel\category\CategoryController@add');
+Route::get('/category/edit/{id}', 'adminpanel\category\CategoryController@edit');
+Route::get('/category/delete/{id}', 'adminpanel\category\CategoryController@delete');

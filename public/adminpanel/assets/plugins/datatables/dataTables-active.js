@@ -1,7 +1,7 @@
 $(document).ready(function () {
     "use strict"; // Start of use strict
 
-    $('#dataTableExample1, #dataTableExample2').DataTable({
+    $('#categoryTable').dataTable({
         dom: "<'row dataTableInner'<'col-sm-4'l><'col-sm-4 text-center'B><'col-sm-4'f>>tp",
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         buttons: [
