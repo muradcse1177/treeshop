@@ -4,27 +4,20 @@
         <!-- sidebar menu -->
         <ul class="sidebar-menu">
             <li class="treeview active">
-                <a href="index-2.html">
+                <a href="/home">
                     <i class="ti-home"></i><span>Dashboard</span>
-                    <span class="pull-right-container">
-                                        <i class="fa fa-angle-left pull-right"></i>
-                                    </span>
+                    <span class="pull-right-container"></span>
                 </a>
-                <ul class="treeview-menu">
-                    <li class="active"><a href="index-2.html">Dashboard One</a></li>
-                    <li><a href="index2.html">Dashboard Two</a></li>
-                    <li><a href="index3.html">Dashboard Three</a></li>
-                </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="ti-pencil-alt"></i> <span>Forms</span>
+                    <i class="ti-pencil-alt"></i> <span>Catalog</span>
                     <span class="pull-right-container">
                                         <i class="fa fa-angle-left pull-right"></i>
                                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="forms_basic.html">Basic Forms</a></li>
+                    <li><a href="/categories">Categories</a></li>
                     <li><a href="forms_validation.html">Validation Forms</a></li>
                     <li><a href="form_input_group.html">Input Group</a></li>
                     <li><a href="form_mask.html">Form Mask</a></li>
