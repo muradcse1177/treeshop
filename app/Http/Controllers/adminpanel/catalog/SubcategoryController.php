@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\adminpanel\subcategory;
+namespace App\Http\Controllers\adminpanel\catalog;
 
 use App\Model\Category;
 use App\Model\Subcategory;
@@ -24,7 +24,7 @@ class SubcategoryController extends Controller
                 $data['category'] = Category::orderBy('name', 'asc')->get();
                 $data['subcategory'] = Subcategory::find(1)->orderBy('name', 'asc')->get();
                 $request->session()->flash('successMsg', 'Subcategory added successful!');
-                return View('adminpanel.subcategories', ['data' => $data]);
+                return View('adminpanel.catalog.subcategories', ['data' => $data]);
             }
             else{
                 $request->session()->flash('errorMsg', 'Subcategory added failed!');
@@ -44,6 +44,13 @@ class SubcategoryController extends Controller
         $data['subcategory'] =  Subcategory::find(1)->where('id', $id)->first();
 //        echo '<pre>'; print_r($data['subcategory']->category->name); echo '</pre>';  exit;
         $data['action'] = 'edit';
-        return View('adminpanel.subcategories',['editdata' => $data]);
+        return View('adminpanel.catalog.subcategories',['editdata' => $data]);
+    }
+    public function delete(Request $request,$id){
+        Subcategory::where('id',$id)->delete();
+        $data['category'] = Category::orderBy('name', 'asc')->get();
+        $data['subcategory'] = Subcategory::find(1)->orderBy('name', 'asc')->get();
+        $request->session()->flash('successMsg', 'Subcategory Deleted successful!');
+        return View('adminpanel.catalog.subcategories', ['data' => $data]);
     }
 }

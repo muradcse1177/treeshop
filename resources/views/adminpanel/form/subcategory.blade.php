@@ -1,5 +1,5 @@
 <div class="form-group ">
-    <label>The basics</label>
+    <label>Category</label>
     <select class="form-control" name="category" id="category" required>
         <option value=""> Select Category</option>
         <?php if(isset($editdata['category']))

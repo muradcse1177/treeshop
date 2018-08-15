@@ -10,11 +10,12 @@
                 </div>
                 <div class="header-title">
                     <h1></h1>
-                    <button id="addSubCategoryButton" type="button" class="btn btn-base w-md m-rb-5"><span class="glyphicon glyphicon-plus"></span>@if(isset($editdata['action'])){{'Edit'}}  @else{{"Add New"}} @endif Sub Category</button>
+                    <button id="addSubCategoryButton" type="button" class="btn btn-base w-md m-rb-5"><span class="glyphicon glyphicon-plus"></span>@if(isset($editdata['action'])){{'Edit'}}  @else{{"Add New"}} @endif Subcategory</button>
+                    <button id="cancelSubCategoryButton" style="display: none;" type="button" class="btn btn-base w-md m-rb-5"><span class="glyphicon glyphicon-remove"></span>Cancel New Subcategory</button>
                     <ol class="breadcrumb">
                         <li><a href="/home"><i class="pe-7s-home"></i> Dashboard</a></li>
                         <li><a href="#">Catalog</a></li>
-                        <li class="active">Sub Category</li>
+                        <li class="active">Subcategory</li>
                     </ol>
                 </div>
             </div>
@@ -42,7 +43,7 @@
                         <div class="panel panel-bd lobidrag">
                             <div class="panel-heading">
                                 <div class="panel-title">
-                                    <h4>Category List</h4>
+                                    <h4>Subcategory List</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -83,14 +84,13 @@
 @endsection
 @section('footer')
     @parent
+    <script src="/adminpanel/catalog/catalog.js"></script>
+    <script src="/adminpanel/assets/plugins/datatables/dataTables-active.js"></script>
     <script>
-        $("#addSubCategoryButton").click(function(){
-            $("#subcategoryForm").show();
-        });
+        subcategoryBtnShowHide();
         $("#name").val('{{@$editdata['subcategory']->name}}');
         $("#category").val('{{@$editdata['subcategory']->category->id}}');
         $("#status").val('{{@$editdata['subcategory']->status}}');
         $("#id").val('{{@$editdata['subcategory']->id}}');
     </script>
-    <script src="/adminpanel/assets/plugins/datatables/dataTables-active.js"></script>
 @endsection

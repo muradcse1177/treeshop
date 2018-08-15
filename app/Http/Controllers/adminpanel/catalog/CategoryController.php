@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\adminpanel\category;
+namespace App\Http\Controllers\adminpanel\catalog;
 
 use App\Model\Category;
 use Illuminate\Http\Request;
@@ -21,7 +21,7 @@ class CategoryController extends Controller
             if ($save) {
                 $data = Category::orderBy('name', 'asc')->get();
                 $request->session()->flash('successMsg', 'Category added successful!');
-                return View('adminpanel.categories', ['data' => $data]);
+                return View('adminpanel.catalog.categories', ['data' => $data]);
             } else {
                  $request->session()->flash('errorMsg', 'Category added failed!');
                  return Redirect::back();
@@ -40,13 +40,13 @@ class CategoryController extends Controller
     public function edit(Request $request,$id){
         $data =  Category::where('id',$id)->get();
         $data->action = 'edit';
-        return View('adminpanel.categories',['editdata' => $data]);
+        return View('adminpanel.catalog.categories',['editdata' => $data]);
     }
 
     public function delete(Request $request,$id){
         Category::where('id',$id)->delete();
         $data = Category::orderBy('name', 'asc')->get();
         $request->session()->flash('successMsg', 'Category Deleted successful!');
-        return View('adminpanel.categories', ['data' => $data]);
+        return View('adminpanel.catalog.categories', ['data' => $data]);
     }
 }
