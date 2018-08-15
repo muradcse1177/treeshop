@@ -17,8 +17,8 @@ class CategoryController extends Controller
             }
             $category->name = $request->name;
             $category->status = $request->status;
-            $category->save();
-            if ($category->save()) {
+            $save = $category->save();
+            if ($save) {
                 $data = Category::orderBy('name', 'asc')->get();
                 $request->session()->flash('successMsg', 'Category added successful!');
                 return View('adminpanel.categories', ['data' => $data]);

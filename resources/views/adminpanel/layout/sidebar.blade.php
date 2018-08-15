@@ -18,6 +18,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/categories">Categories</a></li>
+                    <li><a href="/subcategories">Sub Categories</a></li>
                     <li><a href="forms_validation.html">Validation Forms</a></li>
                     <li><a href="form_input_group.html">Input Group</a></li>
                     <li><a href="form_mask.html">Form Mask</a></li>
