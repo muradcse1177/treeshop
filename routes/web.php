@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('dashboard');
     Route::get('/products', 'adminpanel\PageController@products');
     Route::post('/selectSubcategory', 'adminpanel\catalog\ProductController@selectSubcategory');
     Route::post('/product/add', 'adminpanel\catalog\ProductController@add');
+    Route::get('/product/edit/{id}/{category_id}', 'adminpanel\catalog\ProductController@edit');

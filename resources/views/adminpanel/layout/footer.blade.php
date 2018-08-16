@@ -13,7 +13,8 @@
 <script src="/adminpanel/assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- emojionearea Js -->
 <script src="/adminpanel/assets/plugins/emojionearea/emojionearea.min.js"></script>
-<!-- amcharts Js -->
+<script src="/adminpanel/assets/plugins/datatables/dataTables.min.js"></script>
+
 
 <!-- START THEME LABEL SCRIPT -->
 <script src="/adminpanel/assets/dist/js/theme.js"></script>

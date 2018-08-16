@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\adminpanel;
 
+use App\Model\Category;
+use App\model\Product;
+use App\model\Product_image;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -20,7 +24,8 @@ class PageController extends Controller
     }
     public function products()
     {
-        $data['category'] = \App::call('App\Http\Controllers\adminpanel\catalog\CategoryController@allcategorylist');
+        $data['product'] = Product::orderBy('id', 'desc')->get();
+        $data['category'] = Category::orderBy('name', 'asc')->get();
         return View('adminpanel.catalog.products',['data' => $data]);
     }
 }

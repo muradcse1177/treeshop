@@ -20,6 +20,11 @@
                     <label>Subcategory</label>
                     <select class="form-control" name="subcategory" id="productSubcategory" required>
                         <option value=""> Select Subcategory</option>
+                        @if(isset($editdata['subcategory']))
+                            @foreach($editdata['subcategory'] as $subcategory)
+                                <option value="{{ $subcategory->id }}">{{ $subcategory->name }}</option>
+                            @endforeach
+                        @endif
                     </select>
                 </div>
             </div>
@@ -27,6 +32,7 @@
                 <div class="form-group">
                     <label>Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter Product Name" required>
+                    <input type="hidden" name="id" id="id">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -43,7 +49,7 @@
                 <div class="form-group">
                     <label> Product Description</label>
                     <textarea name="description" id="editor1" style="width: 100%;" rows="12">
-                       Write description here...
+
                     </textarea>
                 </div>
             </div>
@@ -153,6 +159,13 @@
                         <legend>
                             <button type="button" id="addProductImage" class="btn btn-base w-md m-rb-5"><span class="glyphicon glyphicon-plus"></span>Add Product Image</button>
                         </legend>
+
+                        @if(isset($editdata['product'][0]->image))
+                            <?php $images = json_decode($editdata['product'][0]->image,true); ?>
+                            @foreach($images  as $image)
+                                    <img src="{{ $image}}" alt="Product Image" height="200" width="200">
+                            @endforeach
+                        @endif
                     </fieldset>
                     <fieldset>
                         <legend></legend>
