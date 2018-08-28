@@ -1015,14 +1015,14 @@ Common Style CSS
 }
 .mega-menu {
     width: 100%;
-	min-width: 500px;
+	min-width: 700px;
 	padding: 35px 15px 20px 15px;
-    left: auto;
+    left: 0;
     right: 0;
 }
 .mega-menu > li {
 	float: left;
-	width: 33.33%;
+	width: 25%;
 	padding: 0px 5px 20px 5px;
 	list-style: none;
 }

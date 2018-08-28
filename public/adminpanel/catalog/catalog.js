@@ -79,3 +79,17 @@ function productBtnShowHide() {
         $("#productTable").show();
     });
 }
+function bannerBtnShowHide() {
+    $("#addBannerButton").click(function(){
+        $("#bannerForm").show();
+        $("#cancelBannerButton").show();
+        $("#addBannerButton").hide();
+        $("#bannerTable").hide();
+    });
+    $("#cancelBannerButton").click(function(){
+        $("#bannerForm").hide();
+        $("#cancelBannerButton").hide();
+        $("#addBannerButton").show();
+        $("#bannerTable").show();
+    });
+}

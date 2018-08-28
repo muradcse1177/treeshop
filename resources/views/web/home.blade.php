@@ -22,21 +22,9 @@
             </div>
         </div>
     </div>
-    <!--Home Product Layout Area End-->
-
-    <!--Blog Area Start-->
     @include('web.homelayout.blog')
-    <!--Blog Area End-->
-
-    <!--Brand Area Start-->
     @include('web.homelayout.brand')
-    <!--Brand Area End-->
-
-    <!--Feature Area Start-->
     @include('web.homelayout.featured_area')
-    <!--Feature Area End-->
-
-    <!-- Modal Area Strat -->
     @include('web.homelayout.home_modal')
     <!-- Modal Area End -->
 </div>

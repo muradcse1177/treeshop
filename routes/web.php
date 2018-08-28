@@ -24,3 +24,7 @@ Route::get('/home', 'HomeController@index')->name('dashboard');
     Route::post('/selectSubcategory', 'adminpanel\catalog\ProductController@selectSubcategory');
     Route::post('/product/add', 'adminpanel\catalog\ProductController@add');
     Route::get('/product/edit/{id}/{category_id}', 'adminpanel\catalog\ProductController@edit');
+    //Banners.....................................................................................
+    Route::get('/banners', 'adminpanel\PageController@banners');
+    Route::post('/banner/add', 'adminpanel\catalog\BannerController@add');
+    Route::get('/banner/edit/{id}', 'adminpanel\catalog\BannerController@edit');

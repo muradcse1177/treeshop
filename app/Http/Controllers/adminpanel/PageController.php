@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\adminpanel;
 
+use App\model\Banner;
 use App\Model\Category;
 use App\model\Product;
 use App\model\Product_image;
@@ -27,5 +28,10 @@ class PageController extends Controller
         $data['product'] = Product::orderBy('id', 'desc')->get();
         $data['category'] = Category::orderBy('name', 'asc')->get();
         return View('adminpanel.catalog.products',['data' => $data]);
+    }
+    public function banners()
+    {
+        $data['banner'] = Banner::orderBy('id', 'desc')->get();
+        return View('adminpanel.catalog.banners',['data' => $data]);
     }
 }

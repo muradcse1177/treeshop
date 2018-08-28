@@ -20,6 +20,7 @@
                     <li><a href="/categories">Categories</a></li>
                     <li><a href="/subcategories">Sub Categories</a></li>
                     <li><a href="/products">Products</a></li>
+                    <li><a href="/banners">Banner</a></li>
                 </ul>
             </li>
         </ul>

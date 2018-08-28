@@ -6,42 +6,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-5">
-                        <!--Header Top Left Start-->
-                        <div class="header-top-left">
-                            <div class="header-top-language-currency">
-                                <div class="switcher">
-                                    <div class="language">
-                                        <span class="switcher-title">Language: </span>
-                                        <div class="switcher-menu">
-                                            <ul>
-                                                <li><a href="#">English</a>
-                                                    <ul class="switcher-dropdown">
-                                                        <li><a href="#">German</a></li>
-                                                        <li><a href="#">French</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="currency">
-                                        <span class="switcher-title">Currency: </span>
-                                        <div class="switcher-menu">
-                                            <ul>
-                                                <li><a href="#">$ USD</a>
-                                                    <ul class="switcher-dropdown">
-                                                        <li><a href="#">€ EUR</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Header Top Left End-->
                     </div>
                     <div class="col-lg-6 col-md-7">
-                        <!--Header Top Right Start-->
                         <div class="header-top-right">
                             <ul class="menu-top-menu text-md-right">
                                 <li><a href="my-account.html">My Account</a></li>
@@ -52,7 +18,6 @@
                                 <li><a href="/register">Register</a></li>
                             </ul>
                         </div>
-                        <!--Header Top Right End-->
                     </div>
                 </div>
             </div>
@@ -155,37 +120,8 @@
                             <div class="header-menu text-center">
                                 <nav>
                                     <ul class="main-menu">
-                                        <li><a href="index.html">home</a>
-                                            <!--Dropdown Menu Start-->
-                                            <ul class="dropdown">
-                                                <li><a href="index.html">Home Page One</a></li>
-                                                <li><a href="index-2.html">Home Page Two</a></li>
-                                                <li><a href="index-3.html">Home Page Three</a></li>
-                                                <li><a href="index-4.html">Home Page Four</a></li>
-                                                <li><a href="index-5.html">Home Page Five</a></li>
-                                            </ul>
-                                            <!--Dropdown Menu End-->
-                                        </li>
-                                        <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog.html">Pages</a>
-                                            <!--Dropdown Menu Start-->
-                                            <ul class="dropdown">
-                                                <li><a href="single-product.html">Single Product</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-list.html">Shop List View</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="my-account.html">My Account</a></li>
-                                                <li><a href="login-register.html">Log In</a></li>
-                                            </ul>
-                                            <!--Dropdown Menu End-->
-                                        </li>
-                                        <li><a href="#">Features</a>
-                                            <!--Mega Menu Start-->
+                                        <li><a href="/">home</a></li>
+                                        <li><a href="#">Categories</a>
                                             <ul class="mega-menu">
                                                 <li><a href="#" class="item-link">Pages</a>
                                                     <ul>
@@ -218,8 +154,34 @@
                                                         <li><a href="single-product.html">Grouped Product</a></li>
                                                     </ul>
                                                 </li>
+                                                <li><a href="#" class="item-link">Shop</a>
+                                                    <ul>
+                                                        <li><a href="shop-full-width.html">Full Width</a></li>
+                                                        <li><a href="shop-right-sidebar.html">Sidebar Right</a></li>
+                                                        <li><a href="shop-list.html">List View</a></li>
+                                                        <li><a href="single-product.html">Single Product</a></li>
+                                                        <li><a href="single-product.html">Variable Product</a></li>
+                                                        <li><a href="single-product.html">Grouped Product</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
-                                            <!--Mega Menu End-->
+                                        </li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog.html">Pages</a>
+                                            <!--Dropdown Menu Start-->
+                                            <ul class="dropdown">
+                                                <li><a href="single-product.html">Single Product</a></li>
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop-list.html">Shop List View</a></li>
+                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                <li><a href="cart.html">Shopping Cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="my-account.html">My Account</a></li>
+                                                <li><a href="login-register.html">Log In</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </nav>
