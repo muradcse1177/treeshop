@@ -102,7 +102,7 @@
         $("#productSubcategory").val('{{@$editdata['product'][0]->subcategory_id}}');
         $("#name").val('{{@$editdata['product'][0]->name}}');
         $("#status").val('{{@$editdata['product'][0]->status}}');
-        $("#editor1").val('{{@$editdata['product'][0]->description}}');
+        $("#editor1").html('{{@$editdata['product'][0]->description}}');
         $("#model").val('{{@$editdata['product'][0]->model}}');
         $("#tag").val('{{@$editdata['product'][0]->tag}}');
         $("#location").val('{{@$editdata['product'][0]->location}}');
@@ -118,6 +118,12 @@
         $("#vendorLocation").val('{{@$editdata['product'][0]->vendorLocation}}');
         $("#discount").val('{{@$editdata['product'][0]->discount}}');
         $("#rewardPoints").val('{{@$editdata['product'][0]->rewardPoints}}');
+        $("#type").val('{{@$editdata['product'][0]->type}}');
+        $("#img_height").val('{{@$editdata['product'][0]->img_height}}');
+        $("#img_width").val('{{@$editdata['product'][0]->img_width}}');
+        $("#feature_img_width").val('{{@$editdata['product'][0]->feature_img_width}}');
+        $("#feature_img_height").val('{{@$editdata['product'][0]->feature_img_height}}');
+        $("#type").val('{{@$editdata['product'][0]->type}}');
         $("#color").val('{{@$editdata['product'][0]->color}}');
         $("#id").val('{{@$editdata['product'][0]->id}}');
     </script>

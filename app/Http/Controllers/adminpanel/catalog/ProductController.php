@@ -8,6 +8,7 @@ use App\model\Subcategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Redirect;
+use Image;
 
 class ProductController extends Controller
 {
@@ -41,6 +42,11 @@ class ProductController extends Controller
             $product->vendorLocation = @$request->vendorLocation;
             $product->discount = @$request->discount;
             $product->rewardPoints = @$request->rewardPoints;
+            $product->type = @$request->type;
+            $product->img_width = @$request->img_width;
+            $product->img_height = @$request->img_height;
+            $product->feature_img_width = @$request->feature_img_width;
+            $product->feature_img_height = @$request->feature_img_height;
             $product->color = @$request->color;
 
             if ($request->hasFile('image')) {
@@ -48,8 +54,9 @@ class ProductController extends Controller
                 foreach ($file as $images) {
                     $targetFolder = 'adminpanel/uploads/images/products/';
                     $name = time() . '.' . $images->getClientOriginalName();
-                    $image['filePath'] = $name;
-                    $images->move($targetFolder, $name);
+                    $image_resize = Image::make($images->getRealPath());
+                    $image_resize->resize(@$request->img_width, @$request->img_height);
+                    $image_resize->save($targetFolder . $name);
                     $path = '/' . $targetFolder . $name;
                     $imagesP[] = $path;
                 }
@@ -58,7 +65,22 @@ class ProductController extends Controller
             else{
                 $imagepath = $product->image;
             }
+
+            if ($request->hasFile('feature_image')) {
+                $fimages = $request->file('feature_image');
+                $ftargetFolder = 'adminpanel/uploads/images/products/';
+                $fname = time() . '.' . $fimages->getClientOriginalName();
+                $fimage_resize = Image::make($fimages->getRealPath());
+                $fimage_resize->resize(@$request->feature_img_width, @$request->feature_img_height);
+                $fimage_resize->save($ftargetFolder . $fname);
+                $fpath = '/' . $ftargetFolder . $fname;
+                $feature_imagepath =  $fpath;
+            }
+            else{
+                $feature_imagepath = $product->feature_image;
+            }
             $product->image = $imagepath;
+            $product->feature_image = $feature_imagepath;
 //            echo $product; exit;
             $save = $product->save();
             if ($save) {

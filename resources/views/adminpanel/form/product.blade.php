@@ -149,8 +149,67 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
+                    <label>Product Type</label>
+                    <select class="form-control" name="type"  id="type"  required>
+                        <option value=""> Select Type</option>
+                        <option value="1">Our recommended</option>
+                        <option value="2">Day of the day</option>
+                        <option value="3">Featured</option>
+                        <option value="4">New arrival</option>
+                        <option value="5">Best product</option>
+                        <option value="6">Top rated</option>
+                        <option value="7">On sale rated</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
                     <label>Color</label>
-                    <input type="color" class="form-control" id="color" name="color" value ="#37a000" placeholder="Enter Reward Color">
+                    <input type="color" class="form-control" id="color" name="color" value ="#37a000" placeholder="Enter Product Color">
+                </div>
+            </div>
+            @if(isset($editdata['product']))
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <img src="{{ $editdata['product'][0]->feature_image}}" alt="Feature Image" height="60" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <label for="exampleName">Feature Image(jpg/png)</label>
+                            <input type="file" class="form-control" id="feature_image" name="feature_image"   aria-describedby="emailHelp" placeholder="Enter Feature Image" @if(!isset($editdata['action'])){{'required'}} @endif >
+                        </div>
+                    </div>
+                </div>
+            @else
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="exampleName">Banner(jpg/png)</label>
+                        <input type="file" class="form-control" id="feature_image" name="feature_image"   aria-describedby="emailHelp" placeholder="Enter Feature Image" required>
+                    </div>
+                </div>
+            @endif
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Featured Image Width</label>
+                    <input type="number" class="form-control" id="feature_img_width" name="feature_img_width"  placeholder="Enter Image Width" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Featured Image Height</label>
+                    <input type="number" class="form-control" id="feature_img_height" name="feature_img_height"  placeholder="Enter Image Height" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Full Image Width</label>
+                    <input type="number" class="form-control" id="img_width" name="img_width"  placeholder="Enter Image Width" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Full Image Height</label>
+                    <input type="number" class="form-control" id="img_height" name="img_height"  placeholder="Enter Image Height" required>
                 </div>
             </div>
             <div class="col-sm-12">
