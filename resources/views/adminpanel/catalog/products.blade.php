@@ -55,6 +55,7 @@
                                             <th>Image</th>
                                             <th>Name</th>
                                             <th>Model</th>
+                                            <th>Type</th>
                                             <th>Price</th>
                                             <th>Quantity</th>
                                             <th>Discount</th>
@@ -67,10 +68,10 @@
                                         @foreach ($data['product'] as $product)
                                             <tr>
                                                 <td>{{ $i++ }}</td>
-                                                <?php $image = json_decode($product->image,true); ?>
-                                                <td align="center"><img src="{{ $image[0]}}" alt="Product Image" height="50" width="60"></td>
+                                                <td align="center"><img src="{{ $product->feature_image}}" alt="Product Image" height="50" width="60"></td>
                                                 <td>{{$product->name}}</td>
                                                 <td>{{$product->model}}</td>
+                                                <td>{{$product->type}}</td>
                                                 <td>{{$product->price}}</td>
                                                 <td>{{$product->quantity}}</td>
                                                 <td>{{$product->discount}}</td>

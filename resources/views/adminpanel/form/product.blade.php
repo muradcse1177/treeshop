@@ -18,7 +18,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label>Subcategory</label>
-                    <select class="form-control" name="subcategory" id="productSubcategory" required>
+                    <select class="form-control" name="subcategory" id="productSubcategory" >
                         <option value=""> Select Subcategory</option>
                         @if(isset($editdata['subcategory']))
                             @foreach($editdata['subcategory'] as $subcategory)
@@ -152,13 +152,13 @@
                     <label>Product Type</label>
                     <select class="form-control" name="type"  id="type"  required>
                         <option value=""> Select Type</option>
-                        <option value="1">Our recommended</option>
-                        <option value="2">Day of the day</option>
-                        <option value="3">Featured</option>
-                        <option value="4">New arrival</option>
-                        <option value="5">Best product</option>
-                        <option value="6">Top rated</option>
-                        <option value="7">On sale rated</option>
+                        <option value="Our recommended">Our recommended</option>
+                        <option value="Day of the day">Day of the day</option>
+                        <option value="Featured">Featured</option>
+                        <option value="New arrival">New arrival</option>
+                        <option value="Best product">Best product</option>
+                        <option value="Top rated">Top rated</option>
+                        <option value="On sale rated">On sale rated</option>
                     </select>
                 </div>
             </div>

@@ -123,45 +123,25 @@
                                         <li><a href="/">home</a></li>
                                         <li><a href="#">Categories</a>
                                             <ul class="mega-menu">
-                                                <li><a href="#" class="item-link">Pages</a>
+                                                <li><a href="#" class="item-link">Categories</a>
                                                     <ul>
-                                                        <li><a href="about.html">About Us</a></li>
-                                                        <li><a href="about-2.html">About Us 02</a></li>
-                                                        <li><a href="contact.html">Contact Us</a></li>
-                                                        <li><a href="contact-2.html">Contact Us 02</a></li>
-                                                        <li><a href="service.html">Services</a></li>
-                                                        <li><a href="service-2.html">Services 02</a></li>
-                                                        <li><a href="faq.html">Frequently Questions</a></li>
-                                                        <li><a href="404.html">Error 404</a></li>
+                                                        @for($i=0; $i<6; $i++)
+                                                            <li><a href="/wproduct/{{$data['category'][$i]->id}}">{{$data['category'][$i]->name}}</a></li>
+                                                        @endfor
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" class="item-link">Blog</a>
+                                                <li><a href="#" class="item-link">Categories</a>
                                                     <ul>
-                                                        <li><a href="blog-nosidebar.html">None Sidebar</a></li>
-                                                        <li><a href="blog-left-sidebar.html">Sidebar Left</a></li>
-                                                        <li><a href="single-blog.html">Gallery Format</a></li>
-                                                        <li><a href="single-blog.html">Audio Format</a></li>
-                                                        <li><a href="single-blog.html">Video Format</a></li>
+                                                        @for($i=6; $i<12; $i++)
+                                                            <li><a href="/wproduct/{{$data['category'][$i]->id}}">{{$data['category'][$i]->name}}</a></li>
+                                                        @endfor
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" class="item-link">Shop</a>
+                                                <li><a href="#" class="item-link">Categories</a>
                                                     <ul>
-                                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                                        <li><a href="shop-right-sidebar.html">Sidebar Right</a></li>
-                                                        <li><a href="shop-list.html">List View</a></li>
-                                                        <li><a href="single-product.html">Single Product</a></li>
-                                                        <li><a href="single-product.html">Variable Product</a></li>
-                                                        <li><a href="single-product.html">Grouped Product</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="item-link">Shop</a>
-                                                    <ul>
-                                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                                        <li><a href="shop-right-sidebar.html">Sidebar Right</a></li>
-                                                        <li><a href="shop-list.html">List View</a></li>
-                                                        <li><a href="single-product.html">Single Product</a></li>
-                                                        <li><a href="single-product.html">Variable Product</a></li>
-                                                        <li><a href="single-product.html">Grouped Product</a></li>
+                                                        @for($i=12; $i<count($data['category']); $i++)
+                                                            <li><a href="/wproduct/{{$data['category'][$i]->id}}">{{$data['category'][$i]->name}}</a></li>
+                                                        @endfor
                                                     </ul>
                                                 </li>
                                             </ul>

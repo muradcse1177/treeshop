@@ -12,10 +12,10 @@
         <div class="col-12">
             <!--Store Tab Menu Start-->
             <div class="store-product-menu">
-                <ul class="nav justify-content-center mb-45">
-                    <li><a class="active" data-toggle="tab" href="#new">New Arrivals</a></li>
-                    <li><a data-toggle="tab" href="#top">Top Rated</a></li>
-                    <li><a data-toggle="tab" href="#onsale">On Sale</a></li>
+                <ul class="nav justify-content-center mb-100">
+                    <li><a class="active" data-toggle="tab" href="#new"><button type="button" class="btn btn-success">New Arrivals</button></a></li><br>
+                    <li><a data-toggle="tab" href="#top"><button type="button" class="btn btn-warning">Top Rated</button></a></li>
+                    <li><a data-toggle="tab" href="#onsale"><button type="button" class="btn btn-info"> On Sale</button></a></li>
                 </ul>
             </div>
             <!--Store Tab Menu End-->

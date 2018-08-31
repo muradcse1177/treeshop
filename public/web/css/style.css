@@ -1022,7 +1022,7 @@ Common Style CSS
 }
 .mega-menu > li {
 	float: left;
-	width: 25%;
+	width: 33.33%;
 	padding: 0px 5px 20px 5px;
 	list-style: none;
 }
@@ -2496,7 +2496,7 @@ Common Style CSS
     position: relative;
 }
 .testimonial-img:before {
-    background: url(img/icon/testimonial-icon.png) center center no-repeat;
+    background: url(/web/img/icon/testimonial-icon.png) center center no-repeat;
     bottom: 0;
     content: '';
     display: block;

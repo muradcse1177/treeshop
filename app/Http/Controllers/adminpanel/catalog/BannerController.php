@@ -11,6 +11,7 @@ class BannerController extends Controller
 {
     public function add(Request $request){
         try {
+            $banner = new Banner();
             if ($request->id) {
                 $banner = Banner::find($request->id);
                 $path = $banner->image;
@@ -20,7 +21,7 @@ class BannerController extends Controller
                 $filename    = time() . '.' .$image->getClientOriginalName();
                 $targetFolder = 'adminpanel/uploads/images/banners/';
                 $image_resize = Image::make($image->getRealPath());
-                $image_resize->resize(1424, 772);
+                $image_resize->resize(1920, 896);
                 $image_resize->save($targetFolder . $filename);
                 $path =   '/' .$targetFolder . $filename;
             }

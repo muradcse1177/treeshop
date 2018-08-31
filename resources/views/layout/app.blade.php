@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!doctype html >
+<html  class="no-js" lang="en">
     <head>
         <title>@yield('title') | Tree Shop</title>
         @section('header')
