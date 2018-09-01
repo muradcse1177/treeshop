@@ -1,7 +1,5 @@
-<!--Header Area Start-->
 <header>
     <div class="header-container">
-        <!--Header Top Area Start-->
         <div class="header-top-area black-bg">
             <div class="container">
                 <div class="row">
@@ -22,30 +20,23 @@
                 </div>
             </div>
         </div>
-        <!--Header Top Area End-->
-        <!--Header Middle Area Start-->
         <div class="header-middle-area">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-4">
-                        <!--Header Logo Start-->
                         <div class="header-logo">
                             <a href="index.html"><img src="/web/img/logo/logo.png" alt=""></a>
                         </div>
-                        <!--Header Logo End-->
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4">
-                        <!--Header Phone Start-->
                         <div class="header-phone">
                             <div class="icon">
                                 <i class="fa fa-mobile"></i>
                             </div>
                             <p>Phone: <br>(+68) 123 456 7890</p>
                         </div>
-                        <!--Header Phone End-->
                     </div>
                     <div class="col-xl-5 col-lg-3 col-md-10 order-md-4 order-lg-3">
-                        <!--Header Search Area-->
                         <div class="header-search-area">
                             <form action="#">
                                 <div class="form-input">
@@ -54,19 +45,17 @@
                                 </div>
                             </form>
                         </div>
-                        <!--Header Search Area-->
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 order-md-3 order-lg-4">
                         <div class="mini-cart">
                             <a href="#">
                                         <span class="cart-icon">
-                                           <span class="cart-quantity">2</span>
+                                           <span class="cart-quantity">0</span>
                                         </span>
-                                <span class="cart-title">Your cart <br><strong>$190.00</strong></span>
+                                <span class="cart-title">Your cart <br><strong>$00.00</strong></span>
                             </a>
-                            <!--Cart Dropdown Start-->
                             <div class="cart-dropdown">
-                                <ul>
+                                <ul id="cartList">
                                     <li class="single-cart-item">
                                         <div class="cart-img">
                                             <a href="single-product.html"><img src="/web/img/cart/cart1.jpg" alt=""></a>
@@ -79,44 +68,26 @@
                                             <a title="Remove" href="#"><i class="fa fa-times"></i></a>
                                         </div>
                                     </li>
-                                    <li class="single-cart-item">
-                                        <div class="cart-img">
-                                            <a href="single-product.html"><img src="/web/img/cart/cart2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart-content">
-                                            <h5 class="product-name"><a href="single-product.html">Auctor sem</a></h5>
-                                            <span class="cart-price">1 × $100.00</span>
-                                        </div>
-                                        <div class="cart-remove">
-                                            <a title="Remove" href="#"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
                                 </ul>
-                                <p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right">$190.00</span></p>
+                                <p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right">$0.00</span></p>
                                 <p class="cart-btn">
                                     <a href="cart.html">View cart</a>
                                     <a href="checkout.html">Checkout</a>
                                 </p>
                             </div>
-                            <!--Cart Dropdown End-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Header Middle Area End-->
-        <!--Header Bottom Area Start-->
         <div class="header-bottom-area header-sticky">
             <div class="header-boxshadow">
                 <div class="container header-inner">
                     <div class="row">
                         <div class="col-12">
-                            <!--Logo Sticky Start-->
                             <div class="logo-sticky">
                                 <a href="index.html"><img src="/web/img/logo/logo.png" alt=""></a>
                             </div>
-                            <!--Logo Sticky End-->
-                            <!--Main Menu Area Start-->
                             <div class="header-menu text-center">
                                 <nav>
                                     <ul class="main-menu">
@@ -179,7 +150,5 @@
                 </div>
             </div>
         </div>
-        <!--Header Bottom Area End-->
     </div>
 </header>
-<!--Header Area End-->

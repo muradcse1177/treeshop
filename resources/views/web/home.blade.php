@@ -3,7 +3,6 @@
 @section('content')
     @include('web.homelayout.slide')
 
-    <!--Home Product Layout Area Start-->
     <div class="home-product-layout-area mt-120">
         <div class="container">
             <div class="row">
@@ -31,38 +30,28 @@
 @endsection
 @section('footer')
     @parent
+    <script src="/web/js/homeContent.js"></script>
+    <link type="text/css" rel="stylesheet" href="/web/socialshare/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="/web/socialshare/jssocials-theme-flat.css" />
+    <script type="text/javascript" src="/web/socialshare/jssocials.min.js"></script>
     <script>
-        $(document).on("click", "#modalDataTransfer", function () {
-            var productDetails = $(this).data('id');
-            console.log(productDetails);
-            var img_array = JSON.parse(productDetails.image);
-            var modalBodyUpper = "";
-            var inc = 1;
-            for(var i=0; i<img_array.length; i++){
-                if(inc == 1) {
-                    var active = "active";
-                    var activeL = "active";
-                }
-                else {
-                    var active = "";
-                    var activeL = "";
-                }
-                modalBodyUpper += '<div class="tab-pane fade show '+active+'" id="single-slide'+inc+'" role="tabpanel" aria-labelledby="single-slide-tab-'+inc+'">\n' +
-                    '                <div class="single-product-img img-full">\n' +
-                    '                <img src="'+img_array[i]+'" alt="">\n' +
-                    '                </div>\n' +
-                    '                </div>';
-                if(img_array[i]) {
-                    $("#pImage" + inc).attr("src", img_array[i]);
-                }
-                inc++;
+        function productDetails(productDetails){
+            $cart_quantity = parseInt($(".cart-quantity").text());
+            $cart_quantity = $cart_quantity+1;
+            $(".cart-quantity").text($cart_quantity);
+            $.cookie.json = true;
+            if($.cookie('__xxxxpd__')){
+                var currentUserCartDetails = $.cookie('__xxxxpd__');
+                var obj = JSON.parse(JSON.stringify(currentUserCartDetails));
+                obj['products'].push(productDetails);
+                jsonStrProducts = JSON.stringify(obj);
+                console.log(JSON.parse(jsonStrProducts));
             }
-            $('#myTabContentUpper').html(modalBodyUpper);
-            $('#pname').html("Name : "+productDetails.name);
-            $('#pNewPrice').html("৳ "+ (productDetails.price-50));
-            $('#pOldPrice').html("৳ "+productDetails.price);
-            $('#pDescription').html(productDetails.description);
-
-        });
+            else{
+                var currentUserCartDetails = {"products" : [productDetails]};
+                $.cookie('__xxxxpd__', currentUserCartDetails,{ expires: 2 });
+                console.log(currentUserCartDetails);
+            }
+        }
     </script>
 @endsection

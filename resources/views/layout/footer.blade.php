@@ -212,3 +212,4 @@
 <script src="/web/js/plugins.js"></script>
 <!--Main Js-->
 <script src="/web/js/main.js"></script>
+<script src="/web/js/jquery.cookie.js"></script>
