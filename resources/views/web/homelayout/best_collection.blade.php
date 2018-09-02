@@ -37,7 +37,7 @@
                                             <span class="regular-price">{{'৳'." ".$data['product']['bestProduct'][$key]->price}}</span>
                                         </div>
                                     </div>
-                                    <div class="add-to-cart" onclick="productDetails({{$data['product']['bestProduct'][$key]}})">
+                                    <div class="add-to-cart" onclick="productDetailsOnclick({{$data['product']['bestProduct'][$key]}})">
                                         <a href="#" tabindex="0">Add To Cart</a>
                                     </div>
                                 </div>

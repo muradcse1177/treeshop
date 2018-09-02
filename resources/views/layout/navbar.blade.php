@@ -52,28 +52,13 @@
                                         <span class="cart-icon">
                                            <span class="cart-quantity">0</span>
                                         </span>
-                                <span class="cart-title">Your cart <br><strong>$00.00</strong></span>
+                                <span class="cart-title">Your cart <br><strong>৳-<span class="pTotalAmount">00.00</span></strong></span>
                             </a>
                             <div class="cart-dropdown">
-                                <ul id="cartList">
-                                    <li class="single-cart-item">
-                                        <div class="cart-img">
-                                            <a href="single-product.html"><img src="/web/img/cart/cart1.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart-content">
-                                            <h5 class="product-name"><a href="single-product.html">Odio tortor consequat</a></h5>
-                                            <span class="cart-price">1 × $90.00</span>
-                                        </div>
-                                        <div class="cart-remove">
-                                            <a title="Remove" href="#"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right">$0.00</span></p>
-                                <p class="cart-btn">
-                                    <a href="cart.html">View cart</a>
-                                    <a href="checkout.html">Checkout</a>
-                                </p>
+                                {{--<div class="section-title text-center mb-35">--}}
+                                    {{--<h3> Your cart is empty.</h3>--}}
+                                {{--</div>--}}
+                                {{--<p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right"><b>৳-</b><span>0</span></span></p>--}}
                             </div>
                         </div>
                     </div>
