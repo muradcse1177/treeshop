@@ -3,7 +3,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('dashboard');
 //WebHome...............................................................................................................
 Route::get('/', 'web\WebhomeController@webhome');
-Route::get('/single-product/{type}/{id}', 'web\WebhomeController@singleProduct');
+Route::get('/single-product/{id}', 'web\WebhomeController@singleProduct');
+Route::get('/cart', 'web\WebhomeController@cart');
 
 //Catalog...............................................................................................................
 

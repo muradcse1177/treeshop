@@ -19,10 +19,14 @@ class WebhomeController extends Controller
 //        echo '<pre>'; print_r($data['product']['dayOfDay']); echo '</pre>';  exit;
         return view('web/home', ['data' => $data]);
     }
-    public function singleProduct(Request $request,$type,$id){
+    public function singleProduct(Request $request,$id){
         $data['category'] = Category::orderBy('name', 'asc')->where('status',1)->get();
         $data['product'] = Product::orderBy('id', 'desc')->where('status',1)->where('id',$id)->get();
         $data['product']['related'] = Product::orderBy('id', 'desc')->where('status',1)->limit(15)->get();
         return view('web/single-product',['data' => $data]);
+    }
+    public function cart(){
+        $data['category'] = Category::orderBy('name', 'asc')->where('status',1)->get();
+        return view('web/cart',['data' => $data]);
     }
 }

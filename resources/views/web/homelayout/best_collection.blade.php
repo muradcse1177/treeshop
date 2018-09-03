@@ -18,7 +18,7 @@
                         <div class="single-product product-list mb-35">
                             <div class="list-col-4">
                                 <div class="product-img img-full">
-                                    <a href="/single-product/{{$data['product']['bestProduct'][$key]->type}}/{{$data['product']['bestProduct'][$key]->id}}"><img src="{{$data['product']['bestProduct'][$key]->feature_image}}" alt=""></a>
+                                    <a href="/single-product/{{$data['product']['bestProduct'][$key]->id}}"><img src="{{$data['product']['bestProduct'][$key]->feature_image}}" alt=""></a>
                                     <div class="product-action">
                                         <ul>
                                             <li><a href="#open-modal" data-toggle="modal" data-id="{{$data['product']['bestProduct'][$key]}}" id="modalDataTransfer" title="Quick view" tabindex="0"><i class="fa fa-search"></i></a></li>
@@ -30,7 +30,7 @@
                             </div>
                             <div class="list-col-8">
                                 <div class="product-content">
-                                    <h2><a href="/single-product/{{$data['product']['bestProduct'][$key]->type}}/{{$data['product']['bestProduct'][$key]->id}}">{{$data['product']['bestProduct'][$key]->name}}</a></h2>
+                                    <h2><a href="/single-product/{{$data['product']['bestProduct'][$key]->id}}">{{$data['product']['bestProduct'][$key]->name}}</a></h2>
                                     <div class="product-price">
                                         <div class="price-box">
                                             <span class="price">{{'৳'." ".$data['product']['bestProduct'][$key]->price}}</span>

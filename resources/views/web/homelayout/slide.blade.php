@@ -21,7 +21,7 @@
                         @foreach($data['product']['dayOfDay'] as  $key => $value)
                         <div class="single-product">
                             <div class="product-img img-full">
-                                <a href="/single-product/{{$data['product']['dayOfDay'][$key]->type}}/{{$data['product']['dayOfDay'][$key]->id}}">
+                                <a href="/single-product/{{$data['product']['dayOfDay'][$key]->id}}">
                                     <img src="{{$data['product']['dayOfDay'][$key]->feature_image}}" alt="">
                                 </a>
                                 <span class="onsale">Sale!</span>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="product-content">
-                                <h2><a href="/single-product/{{$data['product']['dayOfDay'][$key]->type}}/{{$data['product']['dayOfDay'][$key]->id}}">{{$data['product']['dayOfDay'][$key]->name}}</a></h2>
+                                <h2><a href="/single-product/{{$data['product']['dayOfDay'][$key]->id}}">{{$data['product']['dayOfDay'][$key]->name}}</a></h2>
                                 <div class="product-price">
                                     <div class="price-box">
                                         <span class="regular-price">{{'৳'." ".$data['product']['dayOfDay'][$key]->price}}</span>
